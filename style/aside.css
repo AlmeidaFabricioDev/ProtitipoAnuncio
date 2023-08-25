@@ -1,0 +1,107 @@
+.conteudo-filtro-esquerda {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem 1.5rem 2rem 1.5rem;
+    gap: 0.7rem;
+    /* border-right: 1px solid black; */
+    /* background: #335979c9; */
+     background: #7a91a1;
+    height: 100vh;
+    top: 1px;
+    position:sticky ;  
+
+}
+
+.titulo-filtro {
+    margin: 5% 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+ .titulo-filtro h2{
+    font-family: var(--fonte-principal);
+    color: #e3f5fc;
+    font-weight: 700;
+    font-size: 1.50rem;
+} 
+
+.filtro-feito{
+    border: 1px solid var(--azul-escuro);
+    background: #f8fcfc;
+    box-shadow: 2px 2px 10px #002f52;
+    padding: 0.4rem;
+    margin: 1%;
+    
+    display: inline-block;
+    border-radius: 7px;
+    font-size: 0.80rem;
+    font-weight: 500;
+}
+
+.filtro-escolhido{
+    margin-bottom: 4%;
+    width: 90%
+}
+
+.filtros {
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 7px;
+    box-shadow: 1px 1px 7px #888;
+    font-family: var(--fonte-principal);
+    margin-bottom: 3%;
+}
+
+
+.conteudo-titulo-valor{
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin: 0;
+    color :#e3f5fc;
+}
+
+.conteudo-valores {
+    display: flex;
+    gap: 1rem;
+}
+
+.conteudo-valores-botoes {
+    display: flex;
+    gap: 1rem;
+}
+
+.conteudo-valores input {
+    width: 50%;
+    border-radius: 7px;
+    padding: 0.4rem;
+    box-shadow: 1px 1px 7px #888;
+    font-family: var(--fonte-principal);
+}
+
+.conteudo-valores-botoes button {
+    width: 50%;
+    padding: 0.4rem;
+    /* background-image: linear-gradient(#0dccea, #0d70ea); */
+    background-image: linear-gradient(#7a91a1, #002f52);
+    border: 0;
+    border-radius: 4px;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0 5px 15px; */
+    box-shadow: rgba(255, 255, 255, 0.3) 0 5px 15px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: 200ms linear;
+
+}
+
+.conteudo-valores-botoes button:hover {
+    transform: scale(1.03);
+
+}

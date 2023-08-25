@@ -1,0 +1,135 @@
+.header {
+    height: 10%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 0.6%;
+    align-items: center;
+    border-bottom: 2px solid goldenrod;
+    background: #002f52;
+}
+
+.boas-vindas {
+    font-size: 12px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.header__esquerdo {
+    text-align: center;
+}
+
+
+.header__image {
+    width: 120px;
+    cursor: pointer;
+    
+}
+
+.header__pesquisa {
+    width: 28%;
+    height: 2.4em;
+    border: 1.5px solid;
+    padding: 0.2%;
+    padding-left: 0.5em;
+    border-radius: 20px;
+}
+
+.header__pesquisa::placeholder {
+    background: url("../img/pesquisa.png")no-repeat;
+    background-size: 5%;
+    background-position: 100%;
+    font-weight: 400;
+    font-size: 1em;
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+}
+
+.header__entrar {
+    text-decoration: none;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 50%;
+    margin: 0 5%;
+}
+
+.entrar__link {
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: rgba(255, 255, 255, 0.3) 0 5px 15px;
+    color: var(--preto);
+    text-decoration: none;
+    font-size: 0.7em;
+    padding: 0.7em 1.5em;
+    background-image: linear-gradient(#7a91a1, #002f52);
+    ;
+
+}
+
+.entrar__link p {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.entrar {
+    position: absolute;
+    border: 1px solid black;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    width: 20%;
+    padding: 1%;
+    display: none;
+    background-color: var(--branco);
+    z-index: 2;
+    top: 60px;
+    right: 95px;
+    border-radius: 8px;
+    background: #ffffff;
+
+}
+
+
+.entrar__texto {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.entrar__dados {
+    border: 1px solid #f2f2f2;
+    padding: 3%;
+    border-radius: 4px;
+    background: #f2f2f2;
+    display: block;
+    width: 93%;
+    box-shadow: inset 0 0 5px 2px #a5a3a3;
+}
+
+.container__senha{
+    margin: 0.4rem 0 1rem 0;
+}
+
+.esqueceu__senha {
+    color: var(--preto);
+    font-size: 0.8em;
+    padding: 0% 0% 0% 0%;
+}
+
+.acessar {
+    border: 1px solid white;
+    box-shadow: 0% 10% 10% 0% var(--preto);
+    color: var(--preto);
+    text-decoration: none;
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    display: block;
+    text-align: center;
+    background-color: #002f52;
+    color: white;
+}
+
+.entrar-senha {
+    margin-top: 3%;
+}

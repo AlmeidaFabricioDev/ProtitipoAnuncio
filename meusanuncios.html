@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Meus Anúncios</title>
+
+    <style>
+
+    </style>
+</head>
+
+<body class="filtro__meusanuncios">
+    <div class="header">
+        <div class="header__esquerdo">
+           <a href="index-logado.html"> <img class="header__image" src="img/Logo.png"></a>
+        </div>
+        <div class="user">
+            <input type="search" class="header__pesquisa" placeholder="Buscar">
+            <img src="img/user2.png" class="user__imagem" id="user-acesso">
+
+        </div>
+    </div>
+    <!-- </header> -->
+
+    <main>
+        <section>
+            <div class="user-menu" id="user-menu">
+                <p class="boas-vindas">Bem vindo(a) <b>Guilherme Matos</b></p>
+                <ul class="user-menu__lista">
+                    <li class="user-menu__bloco">
+                        <img src="img/user.png" class="user-menu__imagem">
+                        <a href="https://zoomquilt.org/" class="user-menu__texto">Dados Pessoais</a>
+                    </li>
+                    <li class="user-menu__bloco">
+                        <img src="img/key.png" class="user-menu__imagem">
+                        <a href="https://www.theuncomfortable.com/" class="user-menu__texto">Alterar Senha</a>
+                    </li>
+                    <li class="user-menu__bloco">
+                        <img src="img/fav_icon.png" class="user-menu__imagem">
+                        <a href="http://www.patience-is-a-virtue.org/" class="user-menu__texto">Favoritos</a>
+                    </li>
+                    <li class="user-menu__bloco">
+                        <img src="img/squares.png" class="user-menu__imagem">
+                        <a href="meusanuncios.html" class="user-menu__texto">Meus Anúncios</a>
+                    </li>
+                    <li class="user-menu__bloco">
+                        <img src="img/historic.png" class="user-menu__imagem">
+                        <a href="https://cat-bounce.com/" class="user-menu__texto">Histórico</a>
+                    </li>
+                    <li class="user-menu__bloco">
+                        <img src="img/output.png" class="user-menu__imagem">
+                        <a href="index.html" class="user-menu__texto">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <section class="secao__meusanuncios">
+        <div class="meus-anuncios">
+            <h1 class="meus-anuncios__titulo">Meus Anúncios</h1>
+            <a class="meus-anuncios_adicionar" href="incluir_anuncio.html">
+                <img class="meus-anuncios_imagem" src="img/mais.png">
+                <p>Adicionar</p>
+            </a>
+
+        </div>
+
+   
+
+        <div class="modal" id="myModal">
+            <div class="excluir" id="excluir">
+                <p class="exclusao">Exclusão de Anúncio</p>
+                <hr>
+                <div class="excluir_info">
+                    <span>Deseja realizar a exclusão do Anúncio #00000 ?</span>
+                </div>
+                <div class="excluir_deletar exclusao btns">
+                    <a href="#" class="excluir_link btnCancelar" id="botoes-opcoes">Cancelar</a>
+                    <a href="#" class="excluir_link btnConfirmar" id="botoes-opcoes">Confirmar</a>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <div id="overlay" class="overlay"></div>
+
+
+        <div class="container__anuncio">
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Ativos')" id="defaultOpen">Ativos 2</button>
+                <button class="tablinks" onclick="openCity(event, 'Vendidos')">Vendidos 1</button>
+                <button class="tablinks" onclick="openCity(event, 'Inativos')">Inativos 1</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="Ativos" class="tabcontent">
+                <div class="anuncio">
+                    <div class="caixa">
+                        <div class="cont-card">
+                            <div class="cont">
+                                <div class="cont-image"><img src="img/img-anuncio.PNG" alt="Imagem do anúncio"></div>
+                                <div class="cont-info">
+                                    <div class="cont-titulo">
+                                        <h2>Título do Anúncio 1</h2>
+                                        <h4>R$100,00</h4>
+                                    </div>
+
+                                    <h4>Descrição</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veniam, nihil
+                                        dolores temporibus aut aspernatur maxime optio distinctio eius dolorem quibusdam
+                                        itaque voluptatem, libero blanditiis rerum animi! Modi, dignissimos vel!</p>
+
+                                    <div class="tipo">
+                                        <p class="tipo-local">Serviço - Campo Grande-MS</p>
+                                        <div class="tipo-edit">
+                                            <a href="visu_logado.html"><img
+                                                    class="tipo-imagens" src="img/olho.png"></a>
+                                            <a href="alterar_anuncio.html"><img class="tipo-imagens" src="img/pencil.svg"></a>
+                                            <a href="#" id="myBtn" class="btnOpenModal" onclick="openModal()"><img
+                                                    class="tipo-imagens" src="img/lixo.png"></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="cont">
+                                <div class="cont-image"><img src="img/img-anuncio.PNG" alt="Imagem do anúncio"></div>
+                                <div class="cont-info">
+                                    <div class="cont-titulo">
+                                        <h2>Título do Anúncio 2</h2>
+                                        <h4>R$100,00</h4>
+                                    </div>
+
+                                    <h4>Descrição</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veniam, nihil
+                                        dolores temporibus aut aspernatur maxime optio distinctio eius dolorem quibusdam
+                                        itaque voluptatem, libero blanditiis rerum animi! Modi, dignissimos vel!</p>
+
+                                    <div class="tipo">
+                                        <p class="tipo-local">Produto - Campo Grande-MS</p>
+                                        <div class="tipo-edit">
+                                            <a href="visu_logado.html"><img class="tipo-imagens" src="img/olho.png"></a>
+                                            <a href="alterar_anuncio.html"><img class="tipo-imagens" src="img/pencil.svg"></a>
+                                            <a href="#" id="myBtn" class="btnOpenModal" onclick="openModal()"><img
+                                                    class="tipo-imagens" src="img/lixo.png"></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Vendidos" class="tabcontent">
+                <div class="anuncio">
+                    <div class="caixa">
+                        <div class="cont-card">
+                            <div class="cont">
+                                <div class="cont-image"><img src="img/img-anuncio.PNG" alt="Imagem do anúncio"></div>
+                                <div class="cont-info">
+                                    <div class="cont-titulo">
+                                        <h2>Título do Anúncio 1</h2>
+                                        <h4>R$100,00</h4>
+                                    </div>
+
+                                    <h4>Descrição</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veniam, nihil
+                                        dolores temporibus aut aspernatur maxime optio distinctio eius dolorem quibusdam
+                                        itaque voluptatem, libero blanditiis rerum animi! Modi, dignissimos vel!</p>
+
+                                    <div class="tipo">
+                                        <p class="tipo-local">Serviço - Campo Grande-MS</p>
+                                        <div class="tipo-edit">
+                                            <a href="visu_logado.html"><img class="tipo-imagens" src="img/olho.png"></a>
+                                            <a href="alterar_anuncio.html"><img class="tipo-imagens" src="img/pencil.svg"></a>
+                                            <a href="#" class="btnOpenModal" onclick="openModal()"><img
+                                                    class="tipo-imagens" src="img/lixo.png"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Inativos" class="tabcontent">
+                <div class="anuncio">
+                    <div class="caixa">
+                        <div class="cont-card">
+                            <div class="cont">
+                                <div class="cont-image"><img src="img/img-anuncio.PNG" alt="Imagem do anúncio"></div>
+                                <div class="cont-info">
+                                    <div class="cont-titulo">
+                                        <h2>Título do Anúncio 1</h2>
+                                        <h4>R$100,00</h4>
+                                    </div>
+
+                                    <h4>Descrição</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veniam, nihil
+                                        dolores temporibus aut aspernatur maxime optio distinctio eius dolorem quibusdam
+                                        itaque voluptatem, libero blanditiis rerum animi! Modi, dignissimos vel!</p>
+
+                                    <div class="tipo">
+                                        <p class="tipo-local">Serviço - Campo Grande-MS</p>
+                                        <div class="tipo-edit">
+                                            <a href="visu_logado.html"><img class="tipo-imagens" src="img/olho.png"></a>
+                                            <a href="alterar_anuncio.html"><img class="tipo-imagens" src="img/pencil.svg"></a>
+                                            <a href="#" class="btnOpenModal" onclick="openModal()"><img
+                                                    class="tipo-imagens" src="img/lixo.png"></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <script src="js/modalExcluir.js"></script>
+    <script src="js/meuAnuncio.js"></script>
+    <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+    <script src="js/logado.js"></script>
+
+
+</body>
+
+</html>

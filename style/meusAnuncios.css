@@ -1,0 +1,391 @@
+/* .filtro__meusanuncios{
+   width: 100vw;
+    opacity: 80%; */
+    /* background-color: black;   */
+    /* height: 100vh;
+    position:absolute;
+    display: none;
+    filter: brightness(30%);
+} */
+
+.cabecalho{
+    border-bottom: 1px solid var(--azul-escuro);
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2%;
+}
+
+.cabecalho_logo {
+    width:10%;
+    height: 10%;
+}
+
+.cabecalho_usuario {
+    width: 3%;
+    height: 3%;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 15%;
+    height: 30%;
+    padding: 0;
+    border: 1px solid var(--azul-escuro);
+    position: absolute;
+    background-color: var(--branco);
+    margin: 0% 10% 0% 82%;
+    z-index: 2;
+    top: 9%;
+    border-radius: 8px;
+}
+
+.usuario_lista {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    padding-left: 5%;
+    padding-top: 3%;
+}
+
+
+.secao__meusanuncios{
+    margin-top: 2%;
+}
+
+.usuario_bloco {
+    padding-top: 2%;
+}
+
+.usuario_imagem {
+    width: 10%;
+    padding-right: 2%;
+}
+
+.usuario_texto {
+    text-decoration: none;
+    color: var(--azul-escuro);
+    font-size: 14px;
+}
+
+.usuario_texto:hover {
+    text-decoration: underline;
+}
+
+.meus-anuncios {
+    display: flex;
+    height: 20%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 2%;
+}
+
+.meus-anuncios__titulo{
+    color: var(--azul-escuro);
+    font-size: 1.75rem;
+}
+
+.meus-anuncios_imagem{
+    width: 2%;
+    height: 2%;
+}
+
+.meus-anuncios_adicionar {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--azul-escuro);
+    justify-content: end;
+
+    gap: 1em;
+     /*
+    gap: 2%;
+
+    cursor: pointer;
+    justify-content: flex-end; */
+}
+
+.container__anuncio {
+    width: 99.8%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* A partir daqui todo o modal de excluir item*/
+.modal{
+    position: fixed;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 1000;
+    display: none;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+    display: none;
+}
+
+.excluir{
+    font-size: 14px;
+    background-color: var(--branco);
+    flex-direction: column;
+    box-shadow: 10px 10px 90px 2px black;
+    padding: 2%;
+    text-align: center;  
+    border-radius: 8px;
+}
+
+
+.excluir_info{
+    text-align: center;
+    padding: 5% 0%;
+}
+
+.excluir_deletar {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+
+.exclusao {
+    font-weight: 700;
+    margin: 2%;
+}
+
+
+.excluir_link {
+    border: 1px solid;
+    box-sizing: border-box;
+    box-shadow: 0% 10% 10% 0% var(--preto);
+    color: var(--preto);
+    text-decoration: none;
+    font-size: 0.7em;
+    padding: 0.5em 1em;
+
+}
+
+
+/* Style the tab */
+.tab {
+    margin-top: 2%;
+    width: 80%;
+    overflow: hidden;
+   /* border-bottom: 1px solid black; */
+
+
+    background-color: transparent;
+
+
+  }
+
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: var(--azul-escuro);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 14px;
+    transition: 0.3s;
+    color: var(--branco);
+    gap: 10%;
+    border-radius: 8px;
+ 
+    margin-bottom: 0.5%;
+    font-family: var(--fonte-principal);
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: var(--branco);
+    color: var(--preto);
+    border: 1px solid var(--preto);
+    border-radius: 8px;
+
+    transform: scale(0.90);
+    transition: 1s;
+  }
+
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: var(--branco);
+    color: var(--preto);
+    border: 1px solid var(--preto);
+
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid var(--preto); */
+    border-top: none;
+    margin-bottom: 10%;
+    padding: 0;
+    border-radius: 8px;
+  }
+
+  .tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+.footer {
+    background-color: var(--azul-escuro);
+    height: 5%;
+    width: 99.8%;
+    border: 1px solid var(--azul-escuro);
+    margin-top: 10%;
+}
+
+.anuncio{
+    height: auto;
+}
+
+.caixa{
+    min-height: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.cont-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1% 5% 1% 5%;
+
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+    background: var(--branco);
+    border: 1px solid var(--azul-escuro);
+    margin: 10px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cont:hover{
+    box-shadow: 0 5px 20px var(--azul-escuro);
+}
+
+.cont-image{
+    width: 30em;
+    height: 15em;
+}
+
+.cont-image img{
+    height: 100%;
+    width: 100%;
+}
+
+.cont-info{
+    position:relative ;
+    color: var(--azul-escuro);
+    padding: 10px 20px 20px;
+}
+
+.cont-titulo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont-info h2{
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 0px;
+    width: 40%;
+}
+
+.cont-info p{
+    font-size: 1em;
+    margin-bottom: 0px;
+}
+
+.tipo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20%;
+}
+
+.tipo-local{
+    margin-top: 2%;
+    padding-right: 10%;
+}
+
+.tipo-edit {
+    width: 10%;
+}
+
+.tipo-imagens {
+    width: 25%;
+}
+
+.btnCancelar{
+    padding: 0.4rem;
+    background-image: linear-gradient(#E9967A, #A52A2A);
+    border: 0;
+    border-radius: 4px;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0 5px 15px; */
+    box-shadow: rgba(255, 255, 255, 0.3) 0 5px 15px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: 200ms linear;
+    margin: 0% 1%;
+}
+
+.btnConfirmar{
+    padding: 0.4rem;
+    background-image: linear-gradient(#7a91a1, #002f52);
+    border: 0;
+    border-radius: 4px;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0 5px 15px; */
+    box-shadow: rgba(255, 255, 255, 0.3) 0 5px 15px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: 200ms linear;
+    margin: 0% 1%;
+}

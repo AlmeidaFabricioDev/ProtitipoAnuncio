@@ -1,0 +1,193 @@
+:root{
+    --fonte-principal : 'Poppins';
+    --cor-textos : #000000;
+    --azul-escuro: #002f52;
+    --azul-claro: #326589;
+    --amarelo: #EB9B00;
+    --preto: #000000;
+    --branco: #ffffff;
+    --borda-cards: grey;
+    --fundo-swiper-hover: #f1f0f0
+}
+
+body{
+    font-family: var(--fonte-principal);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.visu-container-anuncio {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    margin: 2% 0% 2% 4%;
+  }
+  
+
+.visu-container-esquerdo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-right: 1px groove;
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.5);
+    padding: 3%;
+  }
+  
+  .carrosel-anuncio {
+    text-align: center;
+  }
+  
+  .container-anuncio-titulo {
+    font-size: 1.9rem;
+    text-align: center;
+  }
+  
+  .corrosel-titulo {
+    margin-bottom: 2%;
+  }
+  
+  .img-carrosel {
+    width: 60%;
+  }
+  
+  .valor-e-favorito {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
+    align-items: center;
+  }
+  
+  .valor-descricao {
+    width: 25%;
+    font-size: 1.5rem;
+  }
+  
+  .favorito-anuncio {
+    display: flex;
+    align-items: center;
+    width: 15%;
+    gap: 0.55rem;
+  }
+  
+  .favorito-anuncio p {
+    font-size: 1.5rem;
+  }
+  
+  .icone__favoritar {
+    width: 14%;
+    cursor: pointer;
+  }
+  
+  .icone__favoritado {
+    display: none;
+    width: 14%;
+    cursor: pointer;
+  }
+  
+  .descricao-anuncio {
+    text-align: justify;
+    font-size: 1.3rem;
+  }
+  
+  .container-mapa .container-localizacao-titulo {
+    margin-bottom: 2%;
+  }
+  
+  .borda-mapa {
+    border: 0px solid black;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 8px;
+    padding: 3px;
+  }
+  
+  .borda-mapa iframe {
+    width: 100%;
+  }
+  
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 16px;
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: 200ms linear;
+  }
+  
+  .swiper-button-prev {
+    position: absolute;
+    left: 7%;
+  }
+  
+  .swiper-button-next {
+    position: absolute;
+    right: 7%;
+  }
+  
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .swiper-pagination {
+    top: 96%;
+  }
+  
+  .swiper-wrapper {
+    padding: 10px;
+  }
+  
+.visu-direito {
+    display: flex;
+    flex-direction: column;
+    border: 0px solid black;
+    height: 72%;
+    width: 25%;
+    border-radius: 8px;
+    position: fixed;
+    background: #e6f9ff;
+    right: 4%;
+    box-shadow: 1px 1px 10px black;
+    background: #7a91a1;
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  
+  .container__dados {
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  
+  .titulo__anunciante {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 3%;
+  }
+  
+  .nome__anunciante {
+    font-size: 1.15rem;
+    margin-bottom: 6%;
+    color: #ffe420;
+    font-weight: 500;
+  }
+  
+  .telefone__anunciante,
+  .email__anunciante,
+  .endereco__anunciante {
+    letter-spacing: 2px;
+    color: #002f52;
+  }
+  

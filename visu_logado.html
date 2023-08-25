@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visulizar anúncio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style/logado.css">
+    <link rel="stylesheet" href="style/naologado.css">
+    <link rel="stylesheet" href="style/visualizacao.css">
+
+</head>
+
+<body>
+
+    <!-- <header> -->
+    <div class="header">
+        <div class="header__esquerdo">
+           <a href="index-logado.html"> <img class="header__image" src="img/Logo.png"></a>
+        </div>
+        <div class="user">
+            <input type="search" class="header__pesquisa" placeholder="Buscar">
+            <img src="img/user2.png" class="user__imagem" id="user-acesso">
+
+        </div>
+    </div>
+    <!-- </header> -->
+
+    <main>
+        <section>
+            <div class="user-menu" id="user-menu">
+                <p class="boas-vindas">Bem vindo(a) <b>Guilherme Matos</b></p>
+                <ul class="user-menu__lista">
+                    <li class="user-menu__bloco">
+                        <img src="img/user.png" class="user-menu__imagem">
+                        <a href="https://zoomquilt.org/" class="user-menu__texto">Dados Pessoais</a>
+                    </li>
+                    <li class="user-menu__bloco">
+                        <img src="img/key.png" class="user-menu__imagem">
+                        <a href="https://www.theuncomfortable.com/" class="user-menu__texto">Alterar Senha</a>
+                    </li>
+                    <li class="user-menu__bloco">
+                        <img src="img/fav_icon.png" class="user-menu__imagem">
+                        <a href="http://www.patience-is-a-virtue.org/" class="user-menu__texto">Favoritos</a>
+                    </li>
+                    <li class="user-menu__bloco">
+                        <img src="img/squares.png" class="user-menu__imagem">
+                        <a href="meusanuncios.html" class="user-menu__texto">Meus Anúncios</a>
+                    </li>
+                    <li class="user-menu__bloco">
+                        <img src="img/book.png" class="user-menu__imagem">
+                        <a href="https://cat-bounce.com/" class="user-menu__texto">Histórico</a>
+                    </li>
+                    <li class="user-menu__bloco">
+                        <img src="img/output.png" class="user-menu__imagem">
+                        <a href="index.html" class="user-menu__texto">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- CONTEÚDO DA PÁGINA -->
+
+    <section class="visu-container-anuncio">
+        <div class="visu-container-esquerdo">
+
+            <h1 class="container-anuncio-titulo">
+                Título do Anúncio podendo ser mais de uma linha
+            </h1>
+
+
+            <div class="carrosel-anuncio">
+                <p class="corrosel-titulo">
+                    Publicado em XX/XX/XXXX - Produto - Quantidade em estoque: 10
+                </p>
+
+                <div class="carrosel">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img class="img-carrosel" src="img/img-anuncio.PNG" alt="imagem carrosel">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-carrosel" src="img/img-anuncio.PNG" alt="imagem carrosel">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-carrosel" src="img/img-anuncio.PNG" alt="imagem carrosel">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-descricacao-anuncio">
+                <div class="valor-e-favorito">
+                    <p class="valor-descricao">
+                        R$ 1.000,00
+                    </p>
+
+                    <div class="favorito-anuncio">
+                        <img class="icone__favoritar" src="img/fav_icon.png" alt="coração favoritar">
+                        <img class="icone__favoritado" src="img/heart.png" alt="coração favoritado">
+                        <p>Favoritar</p>
+                    </div>
+                </div>
+
+                <p class="descricao-anuncio">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo molestie maximus.
+                    Suspendisse lacinia massa neque, posuere eleifend sem pulvinar in. Ut a felis mi. Morbi sit amet
+                    auctor eros. Proin ut varius urna. Aliquam euismod elit sed elit gravida ullamcorper. Nam orci arcu,
+                    maximus eu imperdiet ac, cursus ac neque. Etiam turpis ante, tincidunt sit amet tempor at, sodales
+                    non ipsum.
+                </p>
+            </div>
+
+
+            <div class="container-mapa">
+                <div class="container-localizacao-titulo">
+                    <h2>Localização</h2>
+                </div>
+
+                <div class="borda-mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.0602734337317!2d-54.58675163504382!3d-20.46271746037949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e8c054ec5acd%3A0xaa28b2932409af59!2sCh%C3%A1cara%20Cachoeira%2C%20Campo%20Grande%20-%20MS%2C%2079040-100!5e0!3m2!1spt-BR!2sbr!4v1680293281673!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="visu-container-direito">
+            <div class="visu-direito">
+                <h3 class="titulo__anunciante">Dados do Anunciante</h3>
+                <hr class="linha__divisoria">
+                <div class="container__dados">
+                    <div>
+                        <p class="nome__anunciante">Guilherme Castilho Matos</p>
+                        <strong class="telefone__anunciante">
+                            <p>Telefone(s):</p>
+                        </strong>
+                        <p>(67) 00000-0000 </p>
+                        <p>(67) 00000-0000 </p>
+                    </div>
+
+                    <div>
+                        <strong class="email__anunciante">
+                            <p>E-mail:</p>
+                        </strong>
+                        <p>guilherme.ti@miltecti.com.br</p>
+                    </div>
+
+                    <div>
+                        <strong class="endereco__anunciante">
+                            <p>Endereço:</p>
+                        </strong>
+                        <p>Bairro: Tiradentes</p>
+                        <p>Cidade: Campo Grande</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 1,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+    </script>
+    <Script src="/JS/logado.js"></Script>
+    <script src="/JS/favoritar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>

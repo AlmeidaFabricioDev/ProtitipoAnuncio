@@ -1,0 +1,52 @@
+@import url('style/naologado.css');
+@import url('style/logado.css');
+@import url('style/aside.css');
+@import url('style/carrossel.css');
+@import url('style/content.css');
+@import url('style/meusAnuncios.css');
+@import url('style/inclusao.css');
+
+:root{
+    --fonte-principal : 'Poppins';
+    --cor-textos : #000000;
+    --azul-escuro: #002f52;
+    --azul-claro: #326589;
+    --amarelo: #EB9B00;
+    --preto: #000000;
+    --branco: #ffffff;
+    --borda-cards: grey;
+    --fundo-swiper-hover: #f1f0f0;
+    --azul-cinza:#B0C4DE;
+    --azul-branco: #f8fcfc;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--fonte-principal);
+}   
+
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    border-bottom: 1px solid black;
+    height: 10%;
+}
+
+.container__main{
+    display: grid;
+    grid-template-columns: 20% 80%;
+  
+}
+
+
+.container__principal{
+
+    padding: 1em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background: #f8fcfc;
+}

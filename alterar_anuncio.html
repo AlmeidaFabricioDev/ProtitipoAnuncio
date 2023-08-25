@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Alterar Anúncio</title>
+</head>
+
+<body>
+
+    <!-- <header> -->
+    <div class="header">
+        <div class="header__esquerdo">
+            <a href="index-logado.html"><img class="header__image" src="img/Logo.png"></a>
+        </div>
+        <div class="user">
+            <input type="search" class="header__pesquisa" placeholder="Buscar">
+            <img src="img/user2.png" class="user__imagem" id="user-acesso">
+
+        </div>
+    </div>
+    <!-- </header> -->
+
+    <main>
+        <section>
+            <div class="user-menu" id="user-menu">
+                <p class="boas-vindas">Bem vindo(a) <b>Guilherme Matos</b></p>
+                <ul class="user-menu__lista">
+                    <li class="user-menu__bloco">
+                        <img src="img/user.png" class="user-menu__imagem">
+                        <a href="https://zoomquilt.org/" class="user-menu__texto">Dados Pessoais</a>
+                    </li>
+                    <li class="user-menu__bloco">
+                        <img src="img/key.png" class="user-menu__imagem">
+                        <a href="https://www.theuncomfortable.com/" class="user-menu__texto">Alterar Senha</a>
+                    </li>
+                    <li class="user-menu__bloco">
+                        <img src="img/fav_icon.png" class="user-menu__imagem">
+                        <a href="http://www.patience-is-a-virtue.org/" class="user-menu__texto">Favoritos</a>
+                    </li>
+                    <li class="user-menu__bloco">
+                        <img src="img/squares.png" class="user-menu__imagem">
+                        <a href="meusanuncios.html" class="user-menu__texto">Meus Anúncios</a>
+                    </li>
+                    <li class="user-menu__bloco">
+                        <img src="img/historic.png" class="user-menu__imagem">
+                        <a href="https://cat-bounce.com/" class="user-menu__texto">Histórico</a>
+                    </li>
+                    <li class="user-menu__bloco">
+                        <img src="img/output.png" class="user-menu__imagem">
+                        <a href="index.html" class="user-menu__texto">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            
+
+            <div class="inclusao__anuncio">
+
+                <div class="inclusao__grid1">                
+
+                    <h1>Alterar Anúncio</h1>
+
+                    <div class="inclusao__titulo">
+                        <h3>Título<strong class="inclusao__obrigatorio">*</strong></h3>
+                        <input type="titulo" class="inclusao-titulo inclusao__input" id="texto-alterar">
+                    </div>
+
+                    <div class="inclusao__descricao">
+                        <h3>Descrição<strong class="inclusao__obrigatorio">*</strong></h3>
+                        <textarea name="" id="descricao" cols="1" rows="15" wrap="hard">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eligendi excepturi aut dolor doloremque, cum sunt tenetur repellat earum doloribus ipsum qui deleniti quidem iusto delectus ipsa amet neque commodi.</textarea>
+                    </div>
+
+                    <div class="inclusao__img">
+                        <h3>Adicionar imagens</h3>
+
+                        <div class="inclusao__img-add">
+                            <label for="arquivo">Escolher imagem</label>
+                            <div class="inclusao__img-1">
+                                <p>nomedoarquivo1.png</p>
+                                <input type="file" name="arquivo" id="arquivo" multiple accept=".jpg, .gif, .png, .svg, .psd, .webp, .raw, .tiff, .bmp, .pdf">
+                                <a href="#" ><img src="./img/inclusao_add.png" class="inclusao__btn-add" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="inclusao__img-cancel">
+                            <p>nomedoarquivo1.png</p>
+                            <a href="#" ><img src="./img/inclusao_close.png" class="inclusao__btn-cancel alt="></a>
+                        </div>
+                    </div>                    
+
+                    <div class="inclusao__valor">
+                        <h3>Valor<strong class="inclusao__obrigatorio">*</strong></h3>
+                        <input type="titulo" class="inclusao-valor inclusao__input" placeholder="R$">
+                    </div>
+                </div>
+
+                <div class="inclusao__grid2">
+                    <div class="inclusao__categorias">
+                        <h3>Categorias<strong class="inclusao__obrigatorio">*</strong></h3>
+
+                        <div class="inclusao__cat-sub">
+                            <select id="inclusao-categoria" class="inclusao__menu" onfocus="ocultaCategoria()">
+                                <option value="" disabled selected>Imóvel</option>
+                            </select>
+                        </div>
+
+                        <div class="inclusao__cat-sub">
+                            <select id="inclusao-categoria" class="inclusao__menu" onfocus="ocultaCategoria()">
+                                <option value="" disabled selected>Veículos</option>
+                            </select>
+                            <p class="inclusao__subnivel">Sub nível 1</p>
+                        </div>
+                        <div class="inclusao__cat-sub">
+                            <select id="inclusao-categoria" class="inclusao__menu" onfocus="ocultaCategoria()">
+                                <option value="" disabled selected>Selecionar</option>
+                            </select>
+                            <p class="inclusao__subnivel">Sub nível 2</p>
+                        </div>    
+                        <div class="inclusao__cat-sub">    
+                            <select id="inclusao-categoria" class="inclusao__menu" onfocus="ocultaCategoria()">
+                                <option value="" disabled selected>Moda e Beleza</option>
+                            </select>
+                            <p class="inclusao__subnivel">Sub nível 3</p>
+                        </div>
+                        <div class="inclusao__cat-sub">
+                            <select id="inclusao-categoria" class="inclusao__menu" onfocus="ocultaCategoria()">
+                                <option value="" disabled selected>Eletrônicos</option>
+                            </select>
+                            <p class="inclusao__subnivel">Sub nível 4</p>
+                        </div>
+                    </div>
+            
+                    <div class="inclusao__grid2-1">
+                        <div class="inclusao__grid2-2">
+                            <div class="inclusao__tipo">
+                                <h3>Tipo Anúncio<strong class="inclusao__obrigatorio">*</strong></h3>
+                                <select id="inclusao-tipo" class="inclusao--tipo" onfocus="ocultaCategoria()">
+                                    <option value="" disabled selected>Selecione</option>
+                                    <option value="produto" >Produto</option>
+                                    <option value="servico" >Serviço</option>
+                                </select>
+                            </div>
+
+                            <div class="inclusao__condicao">
+                                <h3>Condição</h3>
+                                <select id="inclusao-tipo" class="inclusao--tipo" onfocus="ocultaCategoria()">
+                                    <option value="" disabled selected>Selecione</option>
+                                    <option value="novo" >Novo</option>
+                                    <option value="usado" >Usado</option>
+                                    <option value="remanufaturado" >Remanufaturado</option>
+                                    <option value="outros" >Outros</option>
+                                </select>
+                            </div>
+
+                            <div class="inclusao__quantidade">
+                                <h3>Quantidade</h3> 
+                                <input type="number" class="inclusao-quantidade inclusao__input" placeholder="">
+                            </div>
+
+                            <div class="inclusao__localizacao">
+                                <h3>Localização</h3>
+                                <div class="inclusao__localizacao-campos">
+                                    <input type="titulo" class="inclusao-localizacao inclusao__input" placeholder="CEP">
+                                    <p class="inclusao__localizacao-pin">
+                                        <img src="./img/pin-de-localizacao.png" alt="">
+                                        Tiradentes - Campo Grande - MS
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inclusao__grid2-3">
+                            <div class="inclusao__contato">
+                                <h3>Contato</h3>
+                                <div class="inclusao__contato-opcoes">
+                                    <select id="inclusao-contato" class="inclusao__contato-select" onfocus="ocultaCategoria()">
+                                        <option value="" disabled selected>Selecione tipo contato</option>
+                                        <option value="pessoal">Pessoal</option>
+                                        <option value="residencial">Residencial</option>
+                                        <option value="comercial">Comercial</option>
+                                        <option value="outros">Recado</option>
+                                        <option value="msg_wsp">Mensagem(WhatsApp)</option>
+                                        <option value="msg_tlg">Mensagem(Telegram)</option>
+                                    </select>
+                                    <input type="text" class="inclusao__contato-tel inclusao__input">
+                                    <a href="" ><img src="./img/inclusao_add.png" class="inclusao__btn-add" alt=""></a>
+                                </div>
+                                <div class="inclusao__contato-excluir">                        
+                                    <p class="inclusao__contato-excluir-tipo">Pessoal</p>
+                                    <p class="inclusao__contato-excluir-numero">(67) 00000-0000</p>
+                                    <a href="" ><img src="./img/inclusao_close.png" class="inclusao__btn-cancel" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="inclusao__botoes">
+                                <button type="button" class="inclusao__botoes-cancelar">Cancelar</button>
+                                <button type="button" class="inclusao__botoes-confirmar">Confirmar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+    </main>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 15,
+            slidesPerView: 5,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+
+    <script src="https://kit.fontawesome.com/9e3bc99d72.js" crossorigin="anonymous"></script>
+    <script src="./js/favoritar.js"></script>
+    <script src="./js/logado.js"></script>
+    <script src="./js/ocultarFiltro.js"></script>
+    <script src="./js/limparFiltro.js"></script>
+
+    <script>
+        const texto = document.querySelector("#texto-alterar");
+        texto.value = "Titulo do Anúncio";
+    </script>
+
+</body>
+
+</html>
